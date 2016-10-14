@@ -1,0 +1,80 @@
+.zui.menubar
+{
+	height: 42px;
+	background-color: #242424;
+	overflow: hidden;
+}
+
+.zui.menubar > .item
+{
+	color: #ffffff;
+	line-height: 42px;
+	padding-left: 15px;
+	padding-right: 15px;
+	cursor: default;
+	float: left;
+}
+
+.zui.menubar > .item.selected,.zui.menubar > .item:hover
+{
+	background-color: #111111;
+}
+
+.zui.menu
+{
+	position: absolute;
+	display: none;
+	background-color: #111111;
+}
+
+.zui.menu > .item
+{
+	display: flex;
+	cursor: default;
+	color: #FFFFFF;
+	line-height: 40px;
+}
+
+.zui.menu > .item.disabled
+{
+	opacity: 0.5;
+}
+
+.zui.menu > .item .icon,.zui.menu > .item .arrow
+{
+	width: 30px;
+	text-align: center;
+	pointer-events: none;
+}
+
+.zui.menu > .item .label
+{
+	pointer-events: none;
+}
+
+.zui.menu > .item .key
+{
+	flex-grow: 1;
+	padding-left: 20px;
+	text-align: right;
+	color: #999999;
+	pointer-events: none;
+}
+
+.zui.menu > .item:hover,.zui.menu > .item.selected
+{
+	background-color: #222222;
+}
+
+.zui.menu > .divider
+{
+	height: 1px;
+	background-color: rgba(255,255,255,0.2);
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.zui.menu > .item > .menu
+{
+	display: none;
+}

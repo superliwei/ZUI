@@ -1,0 +1,55 @@
+.zui.popwin
+{
+	position: absolute;
+	border: solid 1px rgba(0,0,0,0.5);
+	background-color: #333333;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	display: none;
+	flex-direction: column;
+}
+
+.zui.popwin:hover
+{
+	border-color: rgba(255,255,255,0.3);
+}
+
+.zui.popwin .titleBar
+{
+	display: flex;
+	line-height: 30px;
+	border-bottom: solid 1px rgba(0,0,0,0.5);
+	color: #aaaaaa;
+}
+
+.zui.popwin .titleBar span
+{
+	flex-grow: 1;
+}
+
+.zui.popwin .titleBar .icon,.zui.popwin .titleBar .remove
+{
+	width: 30px;
+	text-align: center;
+}
+
+.zui.popwin .titleBar .remove:hover
+{
+	color: #FFFFFF;
+}
+
+.zui.popwin .content
+{
+	flex-grow: 1;
+}
+
+
+.zui.mask
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	top:0px;
+	left:0px;
+}

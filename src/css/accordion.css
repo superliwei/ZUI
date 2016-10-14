@@ -1,0 +1,62 @@
+.zui.accordion
+{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.zui.accordion > .title
+{
+	line-height: 40px;
+	min-height: 40px;
+	color: #FFFFFF;
+	background-color: #313131;
+	display: flex;
+	cursor: default;
+}
+
+.zui.accordion > .content
+{
+	display: none;
+}
+
+.zui.accordion > .title .left
+{
+	width: 38px;
+}
+
+.zui.accordion > .title .left .arrow
+{
+	width: 12px;
+	height: 12px;
+	margin: auto;
+	margin-top: 13px;
+	background-image:url(../images/arrow.png);
+}
+
+.zui.accordion > .title.active,.zui.accordion > .title.active:hover
+{
+	background-color: #E95037;
+}
+
+.zui.accordion > .title.active .left .arrow
+{
+	background-position-x: -12px;
+}
+
+.zui.accordion > .content.active
+{
+	display: block;
+	flex-grow:1;
+	overflow: auto;
+}
+
+.zui.accordion > .title:hover
+{
+	background-color: rgba(0,0,0,0.2);
+}
+
+.zui.accordion > .title:active
+{
+	background-color: rgba(0,0,0,0.5);
+}
