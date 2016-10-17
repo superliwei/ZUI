@@ -10,9 +10,10 @@ ren %releaseDir%\%indexFile% index.html
 
 xcopy src %releaseDir%\src\ /y/s
 
+mkdir %releaseDir%\src\zui\
+
 java -jar compiler.jar ^
 --js %releaseDir%\src\js\ZUI.js ^
---js %releaseDir%\src\js\ZUI.jQuery.js ^
 --js %releaseDir%\src\js\core\Lang.js ^
 --js %releaseDir%\src\js\components\Accordion.js ^
 --js %releaseDir%\src\js\components\CheckBox.js ^
@@ -22,7 +23,8 @@ java -jar compiler.jar ^
 --js %releaseDir%\src\js\components\MenuBar.js ^
 --js %releaseDir%\src\js\components\PopWin.js ^
 --js %releaseDir%\src\js\components\Slider.js ^
---js_output_file %releaseDir%\src\zui.0.0.1.min.js
+--js %releaseDir%\src\js\ZUI.jQuery.js ^
+--js_output_file %releaseDir%\src\zui\zui.0.0.1.min.js
 
 rmdir %releaseDir%\src\js /s/q
 
@@ -35,11 +37,11 @@ copy %releaseDir%\src\css\zui.css+^
 %releaseDir%\src\css\menubar.css+^
 %releaseDir%\src\css\popwin.css+^
 %releaseDir%\src\css\slider.css ^
-%releaseDir%\src\zui.css /b
+%releaseDir%\src\zui\zui.css /b
 
 java -jar yuicompressor.jar --type css ^
-%releaseDir%\src\zui.css ^
--o %releaseDir%\src\zui.0.0.1.min.css
+%releaseDir%\src\zui\zui.css ^
+-o %releaseDir%\src\zui\zui.0.0.1.min.css
 
-rm %releaseDir%\src\zui.css
+rm %releaseDir%\src\zui\zui.css
 rmdir %releaseDir%\src\css /s/q
