@@ -15,8 +15,11 @@
 	    <link rel="stylesheet" type="text/css" href="src/css/input.css">
 	    <link rel="stylesheet" type="text/css" href="src/css/popwin.css">
 	    <link rel="stylesheet" type="text/css" href="src/css/button.css">
+	    <link rel="stylesheet" type="text/css" href="src/css/textarea.css">
+	    <link rel="stylesheet" type="text/css" href="src/css/colorpicker.css">
 	    
 		<script type="text/javascript" src="src/libs/jquery-2.1.1.min.js" ></script>
+		<script type="text/javascript" src="src/libs/tinyColorPicker-master/jqColorPicker.min.js" ></script>
 		
 		<!-- zui js -->
 	    <script type="text/javascript" src="src/js/ZUI.js"></script>
@@ -28,6 +31,8 @@
 	    <script type="text/javascript" src="src/js/components/Slider.js"></script>
 	    <script type="text/javascript" src="src/js/components/Input.js"></script>
 	    <script type="text/javascript" src="src/js/components/PopWin.js"></script>
+	    <script type="text/javascript" src="src/js/components/TextArea.js"></script>
+	    <script type="text/javascript" src="src/js/components/ColorPicker.js"></script>
 	    
 	    <script type="text/javascript" src="src/js/core/Lang.js"></script>
 	    
@@ -76,7 +81,8 @@
 	    	{
 	    		flex-grow: 1;
 	    		padding: 15px;
-	    		overflow: auto;
+	    		overflow-y: auto;
+	    		overflow-x: hidden;
 	    	}
 	    	
 	    	.mainLayout .rightBox .panel
@@ -139,6 +145,8 @@
 	    		CheckBox : "选择框",
 	    		ComboBox : "下拉菜单",
 	    		Input : "输入框",
+	    		TextArea : "文本框",
+	    		ColorPicker : "颜色选择器",
 	    		MenuBar : "菜单栏/菜单",
 	    		PopWin : "弹出窗口",
 	    		Slider : "拖动条",
@@ -189,6 +197,8 @@
 	    		CheckBox : "CheckBox",
 	    		ComboBox : "ComboBox",
 	    		Input : "Input",
+	    		TextArea : "TextArea",
+	    		ColorPicker : "ColorPicker",
 	    		MenuBar : "MenuBar/Menu",
 	    		Menu : "Menu",
 	    		PopWin : "PopWin",
@@ -283,6 +293,20 @@
 						<div style="margin-top: 25px;height: 20px;width: 200px;">
 							<div class="zui input"></div>
 						</div>
+					</div>
+				</div>
+				<div class="panel">
+					<div class="title" data-lang="{$Lang.TextArea}"></div>
+					<div class="content">
+						<div style="margin-top: 25px;height: 45px;width: 200px;">
+							<div class="zui textarea"></div>
+						</div>
+					</div>
+				</div>
+				<div class="panel">
+					<div class="title" data-lang="{$Lang.ColorPicker}"></div>
+					<div class="content">
+						<div class="zui colorpicker"></div>
 					</div>
 				</div>
 				<div class="panel">

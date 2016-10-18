@@ -4,9 +4,11 @@
 		"zui_accordion" : ZUI.Accordion,
 		"zui_checkbox" : ZUI.CheckBox,
 		"zui_input" : ZUI.Input,
+		"zui_textarea" : ZUI.TextArea,
 		"zui_menubar" : ZUI.MenuBar,
 		"zui_slider" : ZUI.Slider,
-		"zui_popwin" : ZUI.PopWin
+		"zui_popwin" : ZUI.PopWin,
+		"zui_colorpicker" : ZUI.ColorPicker
 	};
 	
 	for(var name in map)
@@ -38,8 +40,10 @@ $(function(){
 	$(".zui.accordion").zui_accordion();
 	$(".zui.checkbox").zui_checkbox();
 	$(".zui.input").zui_input();
+	$(".zui.textarea").zui_textarea();
 	$(".zui.menubar").zui_menubar();
 	$(".zui.slider").zui_slider();
 	$(".zui.popwin").zui_popwin();
+	$(".zui.colorpicker").zui_colorpicker();
 	ZUI.Lang.render();
 });
