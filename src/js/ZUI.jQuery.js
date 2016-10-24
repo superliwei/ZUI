@@ -8,7 +8,8 @@
 		"zui_menubar" : ZUI.MenuBar,
 		"zui_slider" : ZUI.Slider,
 		"zui_popwin" : ZUI.PopWin,
-		"zui_colorpicker" : ZUI.ColorPicker
+		"zui_colorpicker" : ZUI.ColorPicker,
+		"zui_pointer" : ZUI.Pointer
 	};
 	
 	for(var name in map)
@@ -45,5 +46,6 @@ $(function(){
 	$(".zui.slider").zui_slider();
 	$(".zui.popwin").zui_popwin();
 	$(".zui.colorpicker").zui_colorpicker();
+	$(".zui.pointer").zui_pointer();
 	ZUI.Lang.render();
 });

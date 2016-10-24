@@ -11,7 +11,7 @@ ZUI.CheckBox = function(option)
 	
 	this.box.click(function(e){
 		self.check.toggle();
-		self.view.trigger(ZUI.Input.CHANGE);
+		self.view.trigger(ZUI.CheckBox.CHANGE);
 	})
 
 	this.getValue = function()

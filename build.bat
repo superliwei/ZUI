@@ -25,6 +25,7 @@ java -jar compiler.jar ^
 --js %releaseDir%\src\js\components\Slider.js ^
 --js %releaseDir%\src\js\components\TextArea.js ^
 --js %releaseDir%\src\js\components\ColorPicker.js ^
+--js %releaseDir%\src\js\components\Pointer.js ^
 --js %releaseDir%\src\js\ZUI.jQuery.js ^
 --js_output_file %releaseDir%\src\zui\zui.0.0.1.min.js
 
@@ -40,6 +41,7 @@ copy %releaseDir%\src\css\zui.css+^
 %releaseDir%\src\css\popwin.css+^
 %releaseDir%\src\css\textarea.css+^
 %releaseDir%\src\css\colorpicker.css+^
+%releaseDir%\src\css\pointer.css+^
 %releaseDir%\src\css\slider.css ^
 %releaseDir%\src\zui\zui.css /b
 

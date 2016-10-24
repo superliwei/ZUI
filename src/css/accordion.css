@@ -7,8 +7,8 @@
 
 .zui.accordion > .title
 {
-	line-height: 40px;
-	min-height: 40px;
+	line-height: 35px;
+	min-height: 35px;
 	color: #FFFFFF;
 	background-color: #313131;
 	display: flex;
@@ -22,7 +22,7 @@
 
 .zui.accordion > .title .left
 {
-	width: 38px;
+	width: 35px;
 }
 
 .zui.accordion > .title .left .arrow
@@ -30,7 +30,7 @@
 	width: 12px;
 	height: 12px;
 	margin: auto;
-	margin-top: 13px;
+	margin-top: 12px;
 	background-image:url(../images/arrow.png);
 }
 
