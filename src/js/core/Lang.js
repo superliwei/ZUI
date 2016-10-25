@@ -8,9 +8,14 @@ ZUI.Lang.render = function(parentContainer)
 	var items = this.findItems(parentContainer);
 	items.each(function(){
 		var lang = $(this).attr("data-lang");
-		var str = lang.substr(1,lang.length-2);
-		$(this).text(eval(str));
+		$(this).text(ZUI.Lang.getText(lang));
 	});
+}
+
+ZUI.Lang.getText = function(exp)
+{
+	var str = exp.substr(1,exp.length-2);
+	return eval(str);
 }
 
 ZUI.Lang.findItems = function(parentContainer)
