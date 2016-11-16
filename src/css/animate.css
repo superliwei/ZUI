@@ -1,0 +1,18 @@
+.zui.button,
+.zui.menubar > .item,
+.zui.menu > .item,
+.zui.accordion > .title,
+.zui.checkbox .box,
+.zui.combobox .box,
+.zui.combobox .list .item,
+.zui.input input,
+.zui.textarea textarea,
+.zui.colorpicker,
+.zui.slider .bar,
+.zui.slider .dragger .box,
+.zui.popwin,
+.zui.popwin .titleBar .remove,
+.zui.pointer .circle
+{
+	transition: border-color 0.5s,color 0.5s,background-color 0.5s;
+}

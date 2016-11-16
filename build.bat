@@ -42,7 +42,8 @@ copy %releaseDir%\src\css\zui.css+^
 %releaseDir%\src\css\textarea.css+^
 %releaseDir%\src\css\colorpicker.css+^
 %releaseDir%\src\css\pointer.css+^
-%releaseDir%\src\css\slider.css ^
+%releaseDir%\src\css\slider.css+^
+%releaseDir%\src\css\animate.css ^
 %releaseDir%\src\zui\zui.css /b
 
 java -jar yuicompressor.jar --type css ^
